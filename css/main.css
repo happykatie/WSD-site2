@@ -1,4 +1,4 @@
-/* Colors -------------------------- 
+/*Colors -------------------------- 
 	#993300 = Rust
 	#ffffcc = Cream
 	#ff9933 = Burnt Orange
@@ -181,11 +181,11 @@ p{
 
 /* Gallery Elements ------------------------------------ */
 
-#gallery{
+#gallerystyle{
 	margin: 15px 0px;
 }
 	
-#gallery ul{
+#gallerystyle ul{
 	list-style-type: none;
 	overflow: hidden;
 	width: 780px;
@@ -193,27 +193,27 @@ p{
 	padding: 0px 15px;
 }
 
-#gallery ul li{
+#gallerystyle ul li{
 	float: left;
 	margin-left: 25px;
 }
 
-#gallery ul li{
+#gallerystyle ul li{
 	border: 10px solid #ffc;
 	display: block;
 	height: 100px;
 	width: 100px;
 }
 
-#gallery ul li:visited{ 
+#gallerystyle ul li:visited{ 
 	border-color: #cccc99;
 }
 
-#gallery ul li:hover{ 
+#gallerystyle ul li:hover{ 
 	border-color: #ffffff;
 }
 
-#gallery ul li:active{ 
+#gallerystyle ul li:active{ 
 	border-color: #ff9933;
 }
 
@@ -221,18 +221,18 @@ p{
 
 /* Visit Elements ------------------------------------ */
 
-#visit{
+#visitstyle{
 	background-color: #fff;
 	float: left;
 	width: 500px;
 	margin: 5px 0px;
 }
 
-#visit p{
+#visitstyle p{
 	padding: 10px;
 }
 
-#visit ol{
+#visitstyle ol{
 	margin: 10px;
 }
 
