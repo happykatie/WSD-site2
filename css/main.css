@@ -14,31 +14,31 @@
 /* Main Type Elements ------------------------------------ */
 
 #container{
-	margin: 0 auto;
-	width: 800px;
+	margin: 0% auto;
+	width: 100%; /*800px*/
 	background:#fff;
 }
 
 h1, h2, h3{
 	font-family: 'Cutive', serif;
 	color: #c60;
-	margin: 0;
-	padding: 15px 15px 0px;
+	margin: 0%;
+	padding: 1.875% 1.875% 0%; /*15px 15px 0px;*/
 }
 
 h2{
-	font-size: 20px;
+	font-size: 1.42857142857143em; /*20px/14px*/
 }
 
 h3{
-	font-size: 16px;
+	font-size: 1.14285714285714em; /*16px/14px*/
 }
 
 body{
-	font: 14px/1.5 'arial', sans-serif;
-	width: 800px;
-	margin: 0 auto;
-	padding: 0;
+	font: 87.5%/1.5 arial, sans-serif; /*14px*/
+	max-width: 800px;
+	margin: 0% auto;
+	padding: 0%;
 	background: #ffffff;
 	background-image: url('../images/cfa-background.png');
 	background-color: #9cf;
@@ -46,7 +46,7 @@ body{
 }
 
 p{
-	margin: 0 20px;
+	margin: 0% 2.5%; /*20px/800px*/
 }
 
 
@@ -55,14 +55,19 @@ p{
 
 #header{
 	background:#9cf;
-	padding: 10px;
+	padding: 1.25%; /*10px/800px*/
 }
 
 #header h1{ 
-	font-size: 10px;
-	margin: 0; 
-	text-indent: -1200px;
+	font-size: 0.71428571428571em; /*10px/14px*/
+	margin: 0%; 
+	text-indent: -150%; /*-1200px/800px*/
 	color: #fff;
+}
+
+#logo img{
+	width: 25%; /*200px/800px*/
+	max-width: 200px;
 }
 
 
@@ -70,22 +75,24 @@ p{
 /* Navigation Elements------------------------------------ */
 
 #navigation{
-	width: 800px;
+	width: 100%; /*800px*/
 	background: #36c;
 	float: right;
 }
 
 #navigation ul{
-	margin: 0 auto;
-	padding: 0;
+	width: 50.625%; /*405px/800px*/
+	margin: 0% auto;
+	padding: 0%;
 	overflow: hidden;
+	float: right;
 }
 
 #navigation ul li{
-	width: 135px;
+	width: 33.333333333333%; /*135px/405px*/
 	list-style-type: none;
 	display: inline;
-	float: right;
+	float: left;
 }
 
 #navigation li a{
@@ -119,47 +126,63 @@ p{
 /* Call To Action Elements ------------------------------------ */
 
 #cta{
-	width: 760px;
+	width: 95%; /*760px/800px*/
 	background: #ffc;
-	padding: 40px 20px 20px 20px;
-	margin: 0 auto;
+	padding: 5% 2.5% 2.5%; /*40px 20px 20px 20px / 800px*/
+	margin: 0% auto;
 	background-image: url('../images/grass.png');
+	background-repeat: no-repeat;
 }
 
 #about{
-	font-size: 32px;
+	font-size: 2.28571428571429em; /*32px/14px*/
 	color: #ff9933;
 	text-shadow: 2px 2px 2px #000;
 }
 
 #cta p{
-	font-size: 18px;
+	font-size: 1.28571428571429em; /*18px/14px*/
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
-	padding: 10px 0;
+	padding: 1.25% 0%; /*10px 0 /800px */
 }
 
 #cta img{
 	float: right;
-	width: 154px;
+	width: 19.25%; /*154px/800px*/
+	max-width: 154px;
 }
 
 #button{
 	display: block;
-	border: none;
-	width: 100px;
+	width: 18.75%; /*150px/800px*/
 	height: 25px;
 	text-align: center;
-	text-decoration: none;
-	background-color: #99ccff;
+	background-color: #3366cc;
 	border: 2px solid #fff;
 	border-radius: 10px;
-	padding: 5px;
-	margin: 0px 15px;
+	padding: 0.625%; /*5px / 800px*/
+	margin: 0% 1.875%; /*15px/800px*/
 	background-image: url('../images/cfa-button.png');
-	
 }
 
+#button a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.28571428571429em; /*18px/14px*/
+}
+	
+#button a:visited{ 
+	color: #ffffcc;
+}
+
+#button a:hover{ 
+	color: #9cf;
+}
+
+#button a:active{ 
+	color: #ff9933; 
+}
 
 
 /* Main Content Elements ------------------------------------ */
@@ -168,9 +191,8 @@ p{
 	-moz-column-count: 3;
 	-moz-column-gap: 15px;
 	text-align: left;
-	width: 760px;
-	padding: 20px 10px;
-	background: #fff;
+	width: 95%; /*760px/800px*/
+	padding: 2.5% 1.25%; /*20px 10px*/
 }
 
 #maincontent ul{
@@ -182,27 +204,27 @@ p{
 /* Gallery Elements ------------------------------------ */
 
 #gallerystyle{
-	margin: 15px 0px;
+	margin: 0%;
 }
 	
 #gallerystyle ul{
 	list-style-type: none;
 	overflow: hidden;
-	width: 780px;
-	margin: 20px auto;
-	padding: 0px 15px;
+	width: 95%; /*760px/800px*/
+	margin: 2.5% auto; /*20px/800px*/
+	padding: 0%;
 }
 
 #gallerystyle ul li{
 	float: left;
-	margin-left: 25px;
-}
-
-#gallerystyle ul li{
+	margin: 2.5%; /*20px/800px*/
 	border: 10px solid #ffc;
 	display: block;
-	height: 100px;
-	width: 100px;
+	width: 12.5%; /*100px / 800px*/
+}
+
+#gallerystyle img{
+	max-width: 100%
 }
 
 #gallerystyle ul li:visited{ 
@@ -222,34 +244,45 @@ p{
 /* Visit Elements ------------------------------------ */
 
 #visitstyle{
-	background-color: #fff;
 	float: left;
-	width: 500px;
-	margin: 5px 0px;
+	width: 62.5%; /*500px/800px*/
 }
 
 #visitstyle p{
-	padding: 10px;
-}
-
-#visitstyle ol{
-	margin: 10px;
+	padding: 1.25%; /*10px / 800px*/
 }
 
 
 
 /* Table and Form Elements ------------------------------------ */
 
-#form{
-	border-top-left-radius: 20px;
+.formcontainer{
 	float: right;
-	width: 280px;
-	height: 300px;
-	margin: 5px 0px 0px 0px;
-	background-color: #cccc99;
+	width: 37.5%; /*37.5%; 300px/800px*/
+	overflow: hidden;
 }
-	
 
+.formbackground{
+	border-top-left-radius: 20px;
+	width: 37.5%; /*300px/800px*/
+	height: 280px;
+	background-color: #cccc99;
+	opacity: .5;
+	position: absolute;
+	z-index: 25;
+}
+
+.formcontent{
+	color: #555;
+	float: left;
+	width: 33.75%; /*270px/800px*/
+	margin: 1.25%; /*10px/800px*/
+	padding: 0%;
+	position: absolute;
+	z-index: 75;
+}
+
+	
 
 /* Footer Elements ------------------------------------ */
 
@@ -257,8 +290,64 @@ footer{
 	clear: both;
 	background-color: #36c;
 	color: #fff;
-	height: 30px;
 	line-height: 30px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 0.85714285714286em; /*12px/14px*/
 }
+
+
+
+/* Media Queries -----------------------------------------*/
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media screen and (min-width: 768px) and (max-width: 959px) {
+		
+		h2{ font-size: 1.46153846153846em; /*19px/13px*/ }
+
+		h3{ font-size: 1.15384615384615em; /*15px/13px*/ }
+
+		body{ font: 81.3%/1.5 arial, sans-serif; /*13px*/ }
+		
+	}
+	
+	/* Mobile Landscape Size to Tablet Portrait Size (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+		h2{ font-size: 1.5em; /*18px/12px*/ }
+
+		h3{ font-size: 1.1666666666667em; /*14px/12px*/ }
+
+		body{ font: 75%/1.5 arial, sans-serif; /*12px*/ }
+		
+		#button{ height: 20px; }
+		
+	}
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	
+		#header{ height: auto; }
+		
+		h1, h2, h3{ font-family: Arial, Sans-serif; }
+		
+		h2{ font-size: 1.5em; /*18px/12px*/ }
+
+		h3{ font-size: 1.1666666666667em; /*14px/12px*/ }
+
+		body{ font: 75%/1.5 arial, sans-serif; /*12px*/ }
+		
+		#cta{ background: #3366cc; background-image: none; }
+		
+		#cta p{ font-size: 1.1666666666667em; text-shadow: none }
+		
+		#cta img{ display: none; }
+			
+		#button{ height: 20px; }
+		
+		#button a{ font-size: 1.1666666666667em; }
+		
+		#maincontent{ -moz-column-count: 1; -moz-column-gap: none; }
+		
+		#visitstyle, .formcontainer, .formbackground, .formcontent{ float: none; width: 100% }
+						
+	}
